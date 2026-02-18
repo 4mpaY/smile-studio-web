@@ -60,7 +60,7 @@ const Index = () => {
       </section>
 
       {/* INFO CARDS */}
-      <section className="py-20 bg-background">
+      <section className="py-20 bg-background bg-dots relative">
         <div className="container mx-auto px-4">
           <Section>
             <div className="grid md:grid-cols-3 gap-6">
@@ -86,7 +86,9 @@ const Index = () => {
       </section>
 
       {/* SERVICIOS */}
-      <section className="py-20 bg-secondary/30">
+      <section className="py-20 bg-secondary/30 relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-72 h-72 bg-accent/5 rounded-full -translate-y-1/2 translate-x-1/2" />
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary/5 rounded-full translate-y-1/2 -translate-x-1/2" />
         <div className="container mx-auto px-4">
           <Section>
             <div className="text-center mb-12">
@@ -140,7 +142,7 @@ const Index = () => {
       </section>
 
       {/* NOSOTROS */}
-      <section className="py-20 bg-background">
+      <section className="py-20 bg-background bg-wave relative">
         <div className="container mx-auto px-4">
           <Section>
             <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -172,7 +174,7 @@ const Index = () => {
       </section>
 
       {/* GALERÍA */}
-      <section className="py-20 bg-secondary/30">
+      <section className="py-20 bg-secondary/30 bg-grid relative">
         <div className="container mx-auto px-4">
           <Section>
             <div className="text-center mb-12">
@@ -202,7 +204,7 @@ const Index = () => {
       </section>
 
       {/* VIDEOS */}
-      <section className="py-20 bg-background">
+      <section className="py-20 bg-background bg-diagonal relative">
         <div className="container mx-auto px-4">
           <Section>
             <div className="text-center mb-12">

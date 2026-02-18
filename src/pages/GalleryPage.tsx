@@ -21,8 +21,10 @@ const GalleryPage = () => (
       </div>
     </section>
 
-    <section className="py-20 bg-background">
-      <div className="container mx-auto px-4">
+    <section className="py-20 bg-background bg-grid relative overflow-hidden">
+      <div className="absolute top-10 left-0 w-64 h-64 bg-accent/5 rounded-full -translate-x-1/2" />
+      <div className="absolute bottom-10 right-0 w-80 h-80 bg-primary/5 rounded-full translate-x-1/3" />
+      <div className="container mx-auto px-4 relative z-10">
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {galleryItems.map((item) => (
             <Section key={item.id}>

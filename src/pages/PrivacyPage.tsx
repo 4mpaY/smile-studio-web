@@ -6,7 +6,7 @@ const PrivacyPage = () => (
       </div>
     </section>
 
-    <section className="py-20 bg-background">
+    <section className="py-20 bg-background bg-wave relative">
       <div className="container mx-auto px-4 max-w-3xl">
         <div className="prose prose-slate max-w-none space-y-6 text-muted-foreground">
           <p className="text-xs italic text-muted-foreground/60">* Contenido generado con fines ilustrativos. Actualice según corresponda.</p>

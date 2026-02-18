@@ -29,7 +29,9 @@ const ContactPage = () => {
         </div>
       </section>
 
-      <section className="py-20 bg-background">
+      <section className="py-20 bg-background bg-dots relative overflow-hidden">
+        <div className="absolute top-20 right-0 w-80 h-80 bg-accent/5 rounded-full translate-x-1/2" />
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary/5 rounded-full translate-y-1/2 -translate-x-1/3" />
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-5 gap-10 max-w-5xl mx-auto">
             {/* Form */}
