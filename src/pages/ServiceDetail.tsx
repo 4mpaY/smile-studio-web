@@ -32,7 +32,8 @@ const ServiceDetail = () => {
         </div>
       </section>
 
-      <section className="py-16 bg-background">
+      <section className="py-16 bg-background bg-dots relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-72 h-72 bg-accent/5 rounded-full -translate-y-1/2 translate-x-1/2" />
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="grid lg:grid-cols-5 gap-10">
             <div className="lg:col-span-3">

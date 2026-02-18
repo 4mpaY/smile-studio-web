@@ -18,7 +18,7 @@ const AboutPage = () => (
     </section>
 
     {/* Quiénes somos */}
-    <section className="py-20 bg-background">
+    <section className="py-20 bg-background bg-wave relative">
       <div className="container mx-auto px-4">
         <Section>
           <div className="max-w-4xl mx-auto">
@@ -40,7 +40,9 @@ const AboutPage = () => (
     </section>
 
     {/* Historia */}
-    <section className="py-20 bg-secondary/30">
+    <section className="py-20 bg-secondary/30 relative overflow-hidden">
+      <div className="absolute top-0 left-0 w-64 h-64 bg-accent/5 rounded-full -translate-y-1/2 -translate-x-1/2" />
+      <div className="absolute bottom-0 right-0 w-80 h-80 bg-primary/5 rounded-full translate-y-1/3 translate-x-1/3" />
       <div className="container mx-auto px-4">
         <Section>
           <div className="grid lg:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
@@ -76,7 +78,7 @@ const AboutPage = () => (
     </section>
 
     {/* Misión y Visión */}
-    <section className="py-20 bg-background">
+    <section className="py-20 bg-background bg-dots relative">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           <Section>
@@ -113,7 +115,7 @@ const AboutPage = () => (
     </section>
 
     {/* Valores */}
-    <section className="py-20 bg-secondary/30">
+    <section className="py-20 bg-secondary/30 bg-grid relative">
       <div className="container mx-auto px-4">
         <Section>
           <div className="text-center mb-12">
