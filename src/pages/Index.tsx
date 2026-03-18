@@ -4,6 +4,15 @@ import { Shield, Award, Heart, Star, ArrowRight, Play, MapPin, Phone, Clock, X }
 import { services } from "@/data/services";
 import { useInView } from "@/hooks/useInView";
 import logoImg from "@/assets/general/logo.png";
+import heroImg from "@/assets/hero/hero.jpg";
+import hero2Img from "@/assets/hero/hero2.jpg";
+import hero3Img from "@/assets/hero/hero3.jpg";
+import endodonciaImg from "@/assets/galeria/endodoncia.jpg";
+import implantesImg from "@/assets/galeria/implantes.jpg";
+import limpiezaImg from "@/assets/galeria/limpieza-dental.jpg";
+import odontopediatriaImg from "@/assets/galeria/odontopediatría.jpg";
+import ortodonciaImg from "@/assets/galeria/ortodoncia.jpg";
+import peridonciaImg from "@/assets/galeria/peridoncia.jpg";
 
 const Section = ({ children, className = "" }: { children: React.ReactNode; className?: string }) => {
   const { ref, visible } = useInView();
@@ -38,7 +47,7 @@ const Index = () => {
         <div className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${currentSlide === 0 ? "opacity-100 z-10" : "opacity-0 z-0 pointer-events-none"}`}>
           <div
             className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: "url('/src/assets/hero/hero.jpg')" }}
+            style={{ backgroundImage: `url(${heroImg})` }}
           />
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-black/50 to-black/90" />
           <div className="container mx-auto px-4 pt-20 pb-16 relative h-full flex items-center justify-end">
@@ -77,7 +86,7 @@ const Index = () => {
         <div className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${currentSlide === 1 ? "opacity-100 z-10" : "opacity-0 z-0 pointer-events-none"}`}>
           <div
             className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: "url('/src/assets/hero/hero2.jpg')" }}
+            style={{ backgroundImage: `url(${hero2Img})` }}
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/50 to-transparent" />
           <div className="container mx-auto px-4 pt-20 pb-16 relative h-full flex items-center justify-start">
@@ -116,7 +125,7 @@ const Index = () => {
         <div className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${currentSlide === 2 ? "opacity-100 z-10" : "opacity-0 z-0 pointer-events-none"}`}>
           <div
             className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: "url('/src/assets/hero/hero3.jpg')" }}
+            style={{ backgroundImage: `url(${hero3Img})` }}
           />
           <div className="absolute inset-0 bg-black/60 backdrop-blur-[2px]" />
           <div className="container mx-auto px-4 pt-20 pb-16 relative h-full flex items-center justify-center">
@@ -265,7 +274,7 @@ const Index = () => {
                   <ArrowRight size={16} />
                 </Link>
               </div>
-              <img src="/src/assets/hero/hero.jpg" alt="Equipo Clínica Dental" className="w-full aspect-[4/3] rounded-xl object-cover shadow-lg" />
+              <img src={heroImg} alt="Equipo Clínica Dental" className="w-full aspect-[4/3] rounded-xl object-cover shadow-lg" />
             </div>
           </Section>
         </div>
@@ -282,12 +291,12 @@ const Index = () => {
           </Section>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {[
-              "/src/assets/galeria/endodoncia.jpg",
-              "/src/assets/galeria/implantes.jpg",
-              "/src/assets/galeria/limpieza-dental.jpg",
-              "/src/assets/galeria/odontopediatría.jpg",
-              "/src/assets/galeria/ortodoncia.jpg",
-              "/src/assets/galeria/peridoncia.jpg"
+              endodonciaImg,
+              implantesImg,
+              limpiezaImg,
+              odontopediatriaImg,
+              ortodonciaImg,
+              peridonciaImg
             ].map((imgSrc, i) => (
               <Section key={i}>
                 <div

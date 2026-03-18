@@ -1,6 +1,15 @@
 import { useState } from "react";
 import { useInView } from "@/hooks/useInView";
 import { X } from "lucide-react";
+import endodonciaImg from "@/assets/galeria/endodoncia.jpg";
+import implantesImg from "@/assets/galeria/implantes.jpg";
+import limpiezaImg from "@/assets/galeria/limpieza-dental.jpg";
+import odontopediatriaImg from "@/assets/galeria/odontopediatría.jpg";
+import ortodonciaImg from "@/assets/galeria/ortodoncia.jpg";
+import peridonciaImg from "@/assets/galeria/peridoncia.jpg";
+import placasImg from "@/assets/galeria/placas-dentales.jpg";
+import postisoImg from "@/assets/galeria/postiso.jpg";
+import protesisImg from "@/assets/galeria/protesis.jpg";
 
 const Section = ({ children, className = "" }: { children: React.ReactNode; className?: string }) => {
   const { ref, visible } = useInView();
@@ -8,15 +17,15 @@ const Section = ({ children, className = "" }: { children: React.ReactNode; clas
 };
 
 const galleryImages = [
-  "/src/assets/galeria/endodoncia.jpg",
-  "/src/assets/galeria/implantes.jpg",
-  "/src/assets/galeria/limpieza-dental.jpg",
-  "/src/assets/galeria/odontopediatría.jpg",
-  "/src/assets/galeria/ortodoncia.jpg",
-  "/src/assets/galeria/peridoncia.jpg",
-  "/src/assets/galeria/placas-dentales.jpg",
-  "/src/assets/galeria/postiso.jpg",
-  "/src/assets/galeria/protesis.jpg",
+  endodonciaImg,
+  implantesImg,
+  limpiezaImg,
+  odontopediatriaImg,
+  ortodonciaImg,
+  peridonciaImg,
+  placasImg,
+  postisoImg,
+  protesisImg,
 ];
 
 const GalleryPage = () => {

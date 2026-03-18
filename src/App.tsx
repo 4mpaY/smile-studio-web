@@ -21,7 +21,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename="/smile-studio-web">
         <Routes>
           <Route element={<Layout />}>
             <Route path="/" element={<Index />} />

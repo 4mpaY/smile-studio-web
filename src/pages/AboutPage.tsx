@@ -1,5 +1,6 @@
 import { Target, Eye, Heart, Users, Star, BookOpen } from "lucide-react";
 import { useInView } from "@/hooks/useInView";
+import heroImg from "@/assets/hero/hero.jpg";
 
 const Section = ({ children, className = "" }: { children: React.ReactNode; className?: string }) => {
   const { ref, visible } = useInView();
@@ -69,7 +70,7 @@ const AboutPage = () => (
                 hacer brillar la sonrisa de cada paciente que cruza nuestras puertas.
               </p>
             </div>
-            <img src="/src/assets/hero/hero.jpg" alt="Dr. Martel" className="w-full aspect-[4/3] rounded-xl object-cover shadow-lg" />
+            <img src={heroImg} alt="Dr. Martel" className="w-full aspect-[4/3] rounded-xl object-cover shadow-lg" />
           </div>
         </Section>
       </div>
