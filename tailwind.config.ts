@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ['"Playfair Display"', 'serif'],
-        body: ['"Inter"', 'sans-serif'],
+        display: ['"Montserrat"', 'sans-serif'],
+        body: ['"Montserrat"', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -70,6 +70,9 @@ export default {
           DEFAULT: "hsl(var(--cyan))",
           light: "hsl(var(--cyan-light))",
           pale: "hsl(var(--cyan-pale))",
+        },
+        gold: {
+          DEFAULT: "hsl(var(--gold))",
         },
       },
       borderRadius: {

@@ -69,9 +69,7 @@ const AboutPage = () => (
                 hacer brillar la sonrisa de cada paciente que cruza nuestras puertas.
               </p>
             </div>
-            <div className="image-placeholder aspect-[4/3] rounded-xl text-muted-foreground text-sm">
-              Imagen histórica / del Dr. Martel
-            </div>
+            <img src="/src/assets/hero/hero.jpg" alt="Dr. Martel" className="w-full aspect-[4/3] rounded-xl object-cover shadow-lg" />
           </div>
         </Section>
       </div>

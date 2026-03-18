@@ -26,9 +26,7 @@ const ServicesPage = () => (
           {services.map((service) => (
             <Section key={service.slug}>
               <div className="bg-card rounded-xl overflow-hidden shadow-card hover:shadow-elevated transition-all border border-border group h-full flex flex-col">
-                <div className="image-placeholder aspect-video text-muted-foreground text-sm">
-                  Imagen - {service.title}
-                </div>
+                <img src={service.image} alt={service.title} className="w-full aspect-video object-cover" />
                 <div className="p-6 flex-1 flex flex-col">
                   <h3 className="font-display text-lg font-semibold text-card-foreground mb-2">{service.title}</h3>
                   <p className="text-sm text-muted-foreground mb-4 flex-1">{service.shortDescription}</p>

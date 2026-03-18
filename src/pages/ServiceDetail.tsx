@@ -37,9 +37,7 @@ const ServiceDetail = () => {
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="grid lg:grid-cols-5 gap-10">
             <div className="lg:col-span-3">
-              <div className="image-placeholder aspect-video rounded-xl text-muted-foreground text-sm mb-8">
-                Imagen - {service.title}
-              </div>
+              <img src={service.image} alt={service.title} className="w-full aspect-video rounded-xl object-cover shadow-lg mb-8" />
               <p className="text-foreground leading-relaxed text-lg mb-6">{service.fullDescription}</p>
               <a
                 href={`https://wa.me/51999999999?text=Hola%2C%20me%20gustar%C3%ADa%20cotizar%20el%20servicio%20de%20${encodeURIComponent(service.title)}`}
